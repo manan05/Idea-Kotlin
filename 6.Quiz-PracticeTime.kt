@@ -1,8 +1,10 @@
 public fun main(){
 //    basicOps()
 //    vars()
-    nullList()
+//    nullList()
+    nullChecks()
 }
+
 
 //Practice Time: Basic Operations
 //Solve the following using the operator methods in one line of code.
@@ -56,5 +58,15 @@ public fun nullList(){
     var list:List<Int?> = listOf(null,null)
     var list2:List<Int>? = null // using elvis operator to state that this var can be null too
 
+}
 
+//Practice Time: Null Checks
+//Create a nullable integer variable called nullTest,
+// and set it to null. Use a null-check that increases the
+// value by one if it's not null, otherwise returns 0, and prints the result.
+
+public fun nullChecks(){
+    var nullTest:Int? = null
+//    nullTest = 5
+    println(nullTest?.plus(1)?:0)
 }
