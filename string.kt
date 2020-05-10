@@ -17,5 +17,13 @@ public fun addString(){
 public fun accessNumString(){
     val noOfFish = 5
     val noOfPlant = 12
+    //Dollar symbol is used to access the value of the variable
     println("I have $noOfFish fishes and $noOfPlant plants.")
+}
+
+public fun addNumString(){
+    val noOfFish = 5
+    val noOfPlant = 12
+    //First the bracket will be solved and then it will be printed
+    println("I have ${noOfFish + noOfPlant} fishes and plants.")
 }
