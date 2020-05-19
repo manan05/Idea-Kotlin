@@ -1,6 +1,6 @@
 public fun main() {
     errorMyList()
-    removeFromMyList()
+//    removeFromMyList()
 }
 
 public fun errorMyList() {
