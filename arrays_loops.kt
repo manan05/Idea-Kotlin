@@ -30,7 +30,7 @@ public fun useListOf(){
     println(swarm)
 }
 
-//
+// makes a mix array which contains elems of different types
 public fun makeMixStrings(){
     // make strings of only integers
     val numbers = intArrayOf(10,20,30,40)
@@ -44,3 +44,5 @@ public fun makeMixStrings(){
     val mix = arrayOf("fish" , 2 , 3.15 , 'a')
     println(Arrays.toString(mix))
 }
+
+//
