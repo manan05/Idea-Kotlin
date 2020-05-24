@@ -1,13 +1,15 @@
 import java.util.*
 
 public fun main() {
-//    errorMyList()
-//    removeFromMyList()
-//    useListOf()
-//    makeMixStrings()
-//    arrayOfArrays()
-//    initialDynamic()
+    errorMyList()
+    removeFromMyList()
+    useListOf()
+    makeMixStrings()
+    arrayOfArrays()
+    initialDynamic()
     basicLoop()
+    loopSecond()
+    usingRange()
 }
 // This function shows an error that we get while modifying value of a list
 public fun errorMyList() {
@@ -87,5 +89,25 @@ public fun loopSecond(){
     val swarm = listOf(fish,plants)
     for((index,elements) in swarm.withIndex()){
         println("Fish at $index is $elements")
+    }
+}
+
+//Using range (..) in kotlin
+public fun usingRange(){
+    //can iterate over characters
+    for (i in 'b'..'g'){
+        println("Alphabets = $i")
+    }
+    //can iterate over numbers
+    for (j in 1 .. 5){
+        println("Numbers = $j")
+    }
+    //reverse iteration
+    for(i in 5 downTo 1){
+        println("Numbers down from $i")
+    }
+    //steps in iteration
+    for(i in 3..10 step 2){
+        println("After 2 steps = $i")
     }
 }
