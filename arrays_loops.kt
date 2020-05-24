@@ -1,10 +1,11 @@
 import java.util.*
 
 public fun main() {
-    errorMyList()
-    removeFromMyList()
-    useListOf()
-    makeMixStrings()
+//    errorMyList()
+//    removeFromMyList()
+//    useListOf()
+//    makeMixStrings()
+    arrayOfArrays()
 }
 // This function shows an error that we get while modifying value of a list
 public fun errorMyList() {
@@ -45,4 +46,13 @@ public fun makeMixStrings(){
     println(Arrays.toString(mix))
 }
 
-//
+// creating array of arrays
+
+public fun arrayOfArrays(){
+    var fish = 12
+    var plants = 5
+    val swarm = listOf<Int>(fish,plants)
+    println((swarm))
+    val bigSwarm = arrayOf(swarm, arrayOf("dolphin","whale","orka"))
+    println(Arrays.toString(bigSwarm))
+}
