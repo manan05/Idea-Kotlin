@@ -5,7 +5,8 @@ public fun main() {
 //    removeFromMyList()
 //    useListOf()
 //    makeMixStrings()
-    arrayOfArrays()
+//    arrayOfArrays()
+    initialDynamic()
 }
 // This function shows an error that we get while modifying value of a list
 public fun errorMyList() {
@@ -55,4 +56,10 @@ public fun arrayOfArrays(){
     println((swarm))
     val bigSwarm = arrayOf(swarm, arrayOf("dolphin","whale","orka"))
     println(Arrays.toString(bigSwarm))
+}
+
+// initialising with dynamic code
+public fun initialDynamic(){
+    val array = Array(5){it*2}
+    println(array.asList())
 }
