@@ -6,7 +6,8 @@ public fun main() {
 //    useListOf()
 //    makeMixStrings()
 //    arrayOfArrays()
-    initialDynamic()
+//    initialDynamic()
+    basicLoop()
 }
 // This function shows an error that we get while modifying value of a list
 public fun errorMyList() {
@@ -62,4 +63,29 @@ public fun arrayOfArrays(){
 public fun initialDynamic(){
     val array = Array(5){it*2}
     println(array.asList())
+}
+
+// basic loop function
+public fun basicLoop(){
+    var fish = 12
+    var plants = 5
+    val swarm = listOf(fish,plants)
+    val bigSwarm = arrayOf(swarm, arrayOf("dolphin", "whale", "shark"))
+    for(i in swarm){
+        println("swarms = $i" )
+    }
+
+    for (i in bigSwarm){
+        println("bigSwarm = $i")
+    }
+}
+
+// loop 2.0
+public fun loopSecond(){
+    var fish = 12
+    var plants = 5
+    val swarm = listOf(fish,plants)
+    for((index,elements) in swarm.withIndex()){
+        println("Fish at $index is $elements")
+    }
 }
